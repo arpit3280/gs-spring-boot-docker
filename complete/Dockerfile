@@ -1,9 +1,10 @@
+FROM openjdk:8-jdk-alpine
+
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
 
 RUN gradle build --no-daemon
 
-FROM openjdk:8-jre-slim
 MAINTAINER Jay
 
 ENV JAVA_APP_JAR account-service.jar
