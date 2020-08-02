@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM gradle:4.2.1-jdk8-alpine
 
 WORKDIR /home/gradle/src
 
