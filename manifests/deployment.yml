@@ -8,12 +8,12 @@ spec:
     metadata:
       labels:
         app: "k8s-84c7"
-  selector:
-    matchLabels:
-      name: "k8s-84c7"
     spec:
       containers:
         - name: "k8s-84c7"
           image: "textilo.azurecr.io/k8s"
           ports:
           - containerPort: 80
+  selector:
+    matchLabels:
+      name: "k8s-84c7"
