@@ -8,6 +8,9 @@ spec:
     metadata:
       labels:
         app: "k8s-84c7"
+  selector:
+    matchLabels:
+      name: "k8s-84c7"
     spec:
       containers:
         - name: "k8s-84c7"
