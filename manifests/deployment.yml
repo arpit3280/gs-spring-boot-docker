@@ -16,4 +16,4 @@ spec:
           - containerPort: 80
   selector:
     matchLabels:
-      name: "k8s-84c7"
+      app: "k8s-84c7"
